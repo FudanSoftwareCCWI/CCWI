@@ -1,0 +1,146 @@
+.header_content {
+	min-height: 100px;
+}
+
+.main_content {
+	padding: 30px 80px;
+}
+
+#side_left {
+	/* 	background-color: white; */
+	
+}
+
+.sidebar-row1 {
+	margin-top: -1px;
+}
+
+.sidebar-title {
+	border-bottom: 1px;
+	border-top: 1px;
+	border-style: dotted;
+	border-color: gray;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+.sidebar-title-noclick{
+	border-bottom: 1px;
+	border-top: 1px;
+	border-style: dotted;
+	border-color: gray;
+	padding: 10px 10px;
+}
+
+.sidebar-content {
+	list-style: none;
+}
+
+.sidebar-content>li {
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.item-col2 ul {
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+}
+
+.item_content {
+	border: 0px;
+}
+
+.showpart {
+	border-top: 1px;
+	border-style: groove;
+	padding: 30px;
+}
+
+.block h3 {
+	width: 250px;
+	border-bottom: 2px;
+	margin-top: 40px;
+	border-color: #D25252;
+	border-bottom-style: solid;
+	color: #D25252;
+}
+
+.block h3:first-child{
+	margin-top: 0px;
+}
+
+.activity h4 {
+	width:150px;
+	float:left;
+	clear:left;
+	margin:0px;
+}
+.activity p {
+	margin-left: 150px;
+}
+
+.activity_line{
+	
+}
+
+.line span {
+	float: left;
+	clear: left;
+	width: 80px;
+	line-height: 26px;
+}
+
+.line_sex_span{
+	height: 26px;
+	line-height: 26px;
+	width:50px;
+}
+
+.line {
+	margin: 10px;
+}
+
+.line textarea{
+	height: 150px;
+	min-height: 150px;
+	max-height: 150px;
+	width: 615px;
+	min-width: 615px;
+	max-width: 615px;
+	border-style:ridge;
+}
+
+span.error{
+	float: right;
+	clear:none;
+	margin-right: 100px;
+	width:400px;
+	display: none;
+}
+
+.enroll_part{
+	margin-top: 30px;
+}
+
+.line input {
+	width: 200px;
+	height: 20px;
+	margin:0px;
+}
+
+.line input[name="sex"] {
+	width: 15px;
+	vertical-align: middle;
+	margin-right: 40px;
+	height: 26px;
+	margin-left: 5px;
+}
+
+.teacher{
+	min-height: 150px;
+}
+
+#join_enroll{
+	height:auto;
+	width:auto;
+}
