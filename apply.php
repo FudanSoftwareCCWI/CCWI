@@ -21,11 +21,11 @@
 				<div id="nav_menu" class="header_l_nav">
 					<a class="text" href="/"><div id="logo" class="header_l_nav">
 							<img src="/img/friendship_black.png">
-							<div class="title">初识大学</div>
+							<div class="title">C.C.W.I.</div>
 						</div></a>
 					<ul class="menu_content">
 						<li><a class="text" href="/">首页</a></li>
-						<li><a class="text" href="/course/">课程设置</a></li>
+						<!-- <li><a class="text" href="/course/">课程设置</a></li> -->
 						<li><a class="text" href="/public/">近期活动</a></li>
 						<li><a class="text" href="/team/">授课团队</a></li>
 						<li><a class="text" href="/join/">加入我们</a></li>
@@ -66,12 +66,12 @@
 							</script>
 							<p class="hltxt enroll_part">其他信息</p>
 							<hr>
-							<div class="line must"><span>年级*</span><input type="text" name="grade"><span class="error hltxt"></span></div>
+							<!-- <div class="line must"><span>年级*</span><input type="text" name="grade"><span class="error hltxt"></span></div>
 							<div class="line must"><span>加试科目*</span><input type="text" name="add"><span class="error hltxt"></span></div>				
-							<div class="line must"><span>目标专业*</span><input type="text" name="aim"><span class="error hltxt"></span></div>
+							<div class="line must"><span>目标专业*</span><input type="text" name="aim"><span class="error hltxt"></span></div> -->
 							<div class="line"><span>微信</span><input type="text" name="weixin"><span class="error hltxt"></span></div>
 							<input type="hidden" name="type" value="<?php echo $type?>">
-							<div class="line"><input type="submit" value="提交" id="panel_enroll"><p class="text gvtxt">请确认你的简历内容准确，真实有效。我们是一个学生团队，期待真诚的你。</p></div>
+							<div class="line"><input type="submit" value="提交" id="panel_enroll"><p class="text gvtxt">请确认你的简历内容准确，真实有效。我们是一个公益团队，期待真诚的你。</p></div>
 						</form>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 		</div>
 		<div class="footer_wrapper">
 			<div class="footer" id="icp">
-				  <span>©2013 Chushidaxue 沪ICP备14004249号-1</span>
+				  <span>©2014 Software Engineering</span>
 			</div>
 		</div>
 	</div>

@@ -21,13 +21,13 @@ $BASELINK ="..";
 				<div id="nav_menu" class="header_l_nav">
 					<a class="text" href="/"><div id="logo" class="header_l_nav">
 							<img src="/img/logo.png">
-							<div class="title">初识大学</div>
+							<div class="title">C.C.W.I.</div>
 						</div></a>
 					<ul class="menu_content">
 						<li><a class="text" href="/">首页</a></li>
-						<li><a class="text" href="/course/">课程设置</a></li>
+						<!-- <li><a class="text" href="/course/">课程设置</a></li> -->
 						<li><a class="text hltxt" href="/public/">分享活动</a></li>
-						<li><a class="text" href="/team/">授课团队</a></li>
+						<li><a class="text" href="/team/">奉献爱心</a></li>
 						<li><a class="text" href="/join/">加入我们</a></li>
 					</ul>
 				</div>
@@ -75,7 +75,7 @@ $BASELINK ="..";
 								printf("<div class='activity_line'>");
 								foreach($p->children() as $line){
 									if($line->getName()=="renren"){
-										printf("<p>%s：<a href='http://www.renren.com/572772808/profile'>@人人主页</a></p>",$line);
+										printf("<p>%s：<a href='http://www.renren.com/250130313' target='_blank'>@人人主页</a></p>",$line);
 									}else
 									printf("<%s>%s</%s>",$line->getName(),$line,$line->getName());
 								}
@@ -101,7 +101,7 @@ $BASELINK ="..";
 		</div>
 		<div class="footer_wrapper">
 			<div class="footer" id="icp">
-				  <span>©2013 Chushidaxue 沪ICP备14004249号-1</span>
+				  <span>©2014 Software Engineering</span>
 			</div>
 		</div>
 	</div>

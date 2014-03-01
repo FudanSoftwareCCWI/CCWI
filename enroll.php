@@ -25,9 +25,9 @@
 						</div></a>
 					<ul class="menu_content">
 						<li><a class="text" href="/">首页</a></li>
-						<li><a class="text" href="/course/">课程设置</a></li>
+						<!-- <li><a class="text" href="/course/">课程设置</a></li> -->
 						<li><a class="text" href="/public/">近期活动</a></li>
-						<li><a class="text" href="/team/">授课团队</a></li>
+						<li><a class="text" href="/team/">奉献爱心</a></li>
 						<li><a class="text" href="/join/">加入我们</a></li>
 					</ul>
 				</div>
@@ -42,9 +42,9 @@
 							<p>
 								<?php
 									if($type=="team"){
-										echo "欢迎加入我们的授课团队";
-									}else if($type=="highschool"){
-										echo "欢迎成为高中校园代理";
+										echo "欢迎加入我们的团队";
+									}else if($type=="orgnization"){
+										echo "欢迎与我们联系！";
 									}else{
 										$type = "team";
 										echo "看来你很喜欢探索，欢迎加入我们的团队！";
@@ -73,15 +73,13 @@
 							  </script>
 							<p class="hltxt enroll_part">教育信息和经历</p>
 							<hr>
-							<div class="line must"><span>学历*</span><input type="text" name="diploma"><span class="error hltxt"></span></div>
-							<div class="line must"><span>学校*</span><input type="text" name="school"><span class="error hltxt"></span></div>						
 							<div class="line"><span>个人经历</span><textarea name="experience"></textarea><span class="error hltxt"></span></div>						
 							<p class="hltxt enroll_part">更多信息（选填）</p>
 							<hr>
-							<div class="line"><span>上传简历</span><input type="file" name="file" id="file" accept="application/msword,application/pdf"><p class="text gvtxt">简历最大2M，DOC/PDF格式，请用：姓名-学校-学历 命名</p></div>
+							<div class="line"><span>上传简历</span><input type="file" name="file" id="file" accept="application/msword,application/pdf"><p class="text gvtxt">简历最大2M，DOC/PDF格式，请用：姓名 命名</p></div>
 							<div class="line"><span>想说的话</span><textarea name="extra"></textarea><span class="error hltxt"></span></div>				
 							<input type="hidden" name="type" value="<?php echo $type?>">
-							<div class="line"><input type="submit" value="提交" id="panel_enroll"><p class="text gvtxt">请确认你的简历内容准确，真实有效。我们是一个学生团队，期待真诚的你。</p></div>
+							<div class="line"><input type="submit" value="提交" id="panel_enroll"><p class="text gvtxt">请确认你的简历内容准确，真实有效。我们是一个公益团队，期待真诚的你。</p></div>
 						</form>
 						</div>
 					</div>
@@ -90,7 +88,7 @@
 		</div>
 		<div class="footer_wrapper">
 			<div class="footer" id="icp">
-				  <span>©2013 Chushidaxue 沪ICP备14004249号-1</span>
+				  <span>©2014 Software Engineering</span>
 			</div>
 		</div>
 	</div>

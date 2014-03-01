@@ -1,5 +1,4 @@
 <?php
-//version1 fan
 header("content-type:text/html; charset=UTF-8");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -20,22 +19,22 @@ header("content-type:text/html; charset=UTF-8");
 					<a class="text" href="/"><div id="logo"
 							class="header_l_nav">
 							<img src="img/logo.png">
-							<div class="title">初识大学</div>
+							<div class="title">C.C.W.I.</div>
 						</div></a>
 					<ul class="menu_content">
 						<li><a class="text" href="/">首页</a></li>
-						<li><a class="text" href="/course/">课程设置</a></li>
+						<!--<li><a class="text" href="/course/">课程设置</a></li> -->
 						<li><a class="text" href="/public/">分享活动</a></li>
-						<li><a class="text" href="/team/">授课团队</a></li>
+						<li><a class="text" href="/team/">奉献爱心</a></li>
 						<li><a class="text" href="/join/">加入我们</a></li>
 					</ul>
 				</div>
 				<div class="welcome_center">
 					<div class="widget-wrap">
-						<h1 class="title">认识大学专业，认识你自己</h1>
+						<h1 class="title">收集爱心，收集每一滴水</h1>
 						<p class="text">
-							大类招生，众多专业，眼花缭乱，文理工商医究竟如何选择？<br> 父母意见，冷热之分，个人兴趣，各种声音到底怎样取舍？<br>
-							当你废寝忘食地为了梦想的学府而奋斗时，<br> 你是否会停下来想一想，<br>“我究竟想要在大学学些什么，未来的我到底想做些什么？”
+							全国各地水污染严重,水污染问题被列为急需解决的环境问题之⼀.<br> 深层地下⽔受污染,⾄少需要上千年才能彻底自净.<br>
+							⽽山区,已经成为深层地下⽔受污染最直接的受害区。<br> 但⽣活在偏远⼭区的孩子们,<br>喝上健康干净的水却成为奢望。
 						</p>
 					</div>
 				</div>
@@ -47,23 +46,23 @@ header("content-type:text/html; charset=UTF-8");
 					<div class="item">
 						<div class="item_content">
 							<img src="./img/BG1.jpg"> <a
-								href="/course/?opstr=1-0&showpart=content-1-0"><div
+								href="/"><div
 									class='item_link text'>
-									<p><span class="x-large">认识大学</span><br><br>
-									你是否对于大学专业设置，内容，前途还<br>
-									一无所知？<br>
-									在通识课程你将得到答案</p>
+									<p><span class="x-large">认识水资源</span><br><br>
+									对于水的各方面知识<br>
+									你是否了解？<br>
+									我们的活动会让你认识水</p>
 								</div></a>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item_content">
 							<img src="./img/BG2.jpg"> <a
-								href="/course/?opstr=2-0&showpart=content-2-0"><div
+								href="/public"><div
 									class='item_link text'>
 									<p><span class="x-large">深入了解</span><br><br>
-									经管，新闻，社科，<br>电子信息，计算机……<br>
-									深入了解课程带你一探究竟</p>
+									西南、西北、中部，<br>哪些地方有干旱？<br>
+									我们的宣传手册会带你一探究竟</p>
 								</div></a>
 						</div>
 					</div>
@@ -72,8 +71,8 @@ header("content-type:text/html; charset=UTF-8");
 							<img src="./img/BG3.jpg"> <a
 								href="/join/">
 							<div class='item_link text'>
-								<p><span class="x-large">高中校园代理</span><br><br>
-								接触专门辅导，<br>享受更多资源，<br>赢在起跑线<br>
+								<p><span class="x-large">实地考察</span><br><br>
+								零距离接触干旱，<br>奉献自己的青春和爱心，<br>走在最前线<br>
 								</p>
 							</div></a>
 						</div>
@@ -84,8 +83,8 @@ header("content-type:text/html; charset=UTF-8");
 						<div class="item_content">
 							<img src="./img/BG4.jpg"> <a href="/team/"><div
 									class='item_link text'>
-									<p><span class="x-large">授课团队</span><br><br>
-									多元化的讲师结构，<br>丰富的大学经历，<br>为你的未来指点迷津
+									<p><span class="x-large">志愿团队</span><br><br>
+									科学的人员构成，<br>丰富的志愿经历，<br>为了人们更好的未来
 									</p>
 								</div></a>
 						</div>
@@ -95,7 +94,7 @@ header("content-type:text/html; charset=UTF-8");
 							<img src="./img/BG5.jpg"> <a href="/public/"><div
 									class='item_link text'>
 									<p><span class="x-large">近期活动</span><br><br>
-									公益课堂，<br>线上宣讲为你敞开——关注我们，<br>关注未来
+									公益活动，<br>线上宣讲为你敞开——关注我们，<br>关注未来
 									</p>
 								</div></a>
 						</div>
@@ -123,21 +122,21 @@ header("content-type:text/html; charset=UTF-8");
 					<h3 class="x-large">联系我们</h3>
 					<dl>
 						<dt class="foot_tn" id="phone"></dt>
-						<dd class="foot_text">15221180164</dd>
+						<dd class="foot_text">13585978782</dd>
 						<dt class="foot_tn" id="email"></dt>
-						<dd class="foot_text">chushidaxue_2013@163.com</dd>
+						<dd class="foot_text">software@gmail.com</dd>
 						<dt class="foot_tn" id="renren"></dt>
-						<dd class="foot_text"><a href="http://www.renren.com/572772808/profile" target="_blank">官方人人</a></dd>
+						<dd class="foot_text"><a href="http://www.renren.com/250130313" target="_blank">官方人人</a></dd>
 					</dl>
 				</div>
 				<div class="foot_col" id="aboutInfo">
-					<h3 class="x-large">初识大学</h3>
-					<p>初识大学”是由来自复旦大学，清华大学，UC 伯克利等国内外知名学府的的大学生团队创立的。大学生涯对于一个人的未来至关重要，然而大学专业选择更是关乎未来甚至一生的发展方向。</p>
-					<p>我们希望能够通过自身的经验，为高中生普及专业知识，帮助专业选择，明确人生规划。我们还相信，通过我们微博的努力————在未来，孩子们除了关心如何进入大学之外，会更加关心在大学校园的自己究竟要学些什么，未来的自己究竟要做些什么。</p>
+					<h3 class="x-large">C.C.W.I.</h3>
+					<p>C.C.W.I.是参照美国C.W.I.发起的公益性活动,我们没有能力解决全世界的健康饮水问题,所以致⼒于解决中国国内偏远山区的饮⽤干净⽔问题。</p>
+					<p>我们不接受政府资助,因为那会阻碍我们看到事实的真相,所以我们只接受社会捐款,希望您的爱心,能够到达真正需要的地⽅。</p>
 				</div>
 			</div>
 			<div class="footer" id="icp">
-				 <span>©2013 Chushidaxue 沪ICP备14004249号-1</span>
+				 <span>©2014 Software Engineering</span>
 			</div>
 		</div>
 	</div>
