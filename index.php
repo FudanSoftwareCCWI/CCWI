@@ -1,15 +1,16 @@
 <?php
 header("content-type:text/html; charset=UTF-8");
+$wwwRoot = ".";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>初识大学</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="/js/top_nav.js"></script>
+<title>CCWI</title>
+<link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/css/main.css">
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/main.js"></script>
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/top_nav.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -18,15 +19,15 @@ header("content-type:text/html; charset=UTF-8");
 				<div id="nav_menu" class="header_l_nav">
 					<a class="text" href="/"><div id="logo"
 							class="header_l_nav">
-							<img src="img/logo.png">
+							<img src="<?php echo $wwwRoot?>/img/friendship_black.png">
 							<div class="title">C.C.W.I.</div>
 						</div></a>
 					<ul class="menu_content">
-						<li><a class="text" href="/">首页</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/">首页</a></li>
 						<!--<li><a class="text" href="/course/">课程设置</a></li> -->
-						<li><a class="text" href="/public/">分享活动</a></li>
-						<li><a class="text" href="/team/">奉献爱心</a></li>
-						<li><a class="text" href="/join/">加入我们</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/public/">分享活动</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/team/">奉献爱心</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/join/">加入我们</a></li>
 					</ul>
 				</div>
 				<div class="welcome_center">
@@ -45,8 +46,8 @@ header("content-type:text/html; charset=UTF-8");
 				<div class="block">
 					<div class="item">
 						<div class="item_content">
-							<img src="./img/BG1.jpg"> <a
-								href="/"><div
+							<img src="<?php echo $wwwRoot?>/img/BG1.jpg"> <a
+								href="<?php echo $wwwRoot?>/"><div
 									class='item_link text'>
 									<p><span class="x-large">认识水资源</span><br><br>
 									对于水的各方面知识<br>
@@ -57,8 +58,8 @@ header("content-type:text/html; charset=UTF-8");
 					</div>
 					<div class="item">
 						<div class="item_content">
-							<img src="./img/BG2.jpg"> <a
-								href="/public"><div
+							<img src="<?php echo $wwwRoot?>/img/BG2.jpg"> <a
+								href="<?php echo $wwwRoot?>/public"><div
 									class='item_link text'>
 									<p><span class="x-large">深入了解</span><br><br>
 									西南、西北、中部，<br>哪些地方有干旱？<br>
@@ -68,8 +69,8 @@ header("content-type:text/html; charset=UTF-8");
 					</div>
 					<div class="item">
 						<div class="item_content" id="aboutUs">
-							<img src="./img/BG3.jpg"> <a
-								href="/join/">
+							<img src="<?php echo $wwwRoot?>/img/BG3.jpg"> <a
+								href="<?php echo $wwwRoot?>/join/">
 							<div class='item_link text'>
 								<p><span class="x-large">实地考察</span><br><br>
 								零距离接触干旱，<br>奉献自己的青春和爱心，<br>走在最前线<br>
@@ -81,7 +82,7 @@ header("content-type:text/html; charset=UTF-8");
 				<div class="block">
 					<div class="item-col2">
 						<div class="item_content">
-							<img src="./img/BG4.jpg"> <a href="/team/"><div
+							<img src="<?php echo $wwwRoot?>/img/BG4.jpg"> <a href="<?php echo $wwwRoot?>/team/"><div
 									class='item_link text'>
 									<p><span class="x-large">志愿团队</span><br><br>
 									科学的人员构成，<br>丰富的志愿经历，<br>为了人们更好的未来
@@ -91,7 +92,7 @@ header("content-type:text/html; charset=UTF-8");
 					</div>
 					<div class="item">
 						<div class="item_content">
-							<img src="./img/BG5.jpg"> <a href="/public/"><div
+							<img src="<?php echo $wwwRoot?>/img/BG5.jpg"> <a href="<?php echo $wwwRoot?>/public/"><div
 									class='item_link text'>
 									<p><span class="x-large">近期活动</span><br><br>
 									公益活动，<br>线上宣讲为你敞开——关注我们，<br>关注未来
@@ -104,11 +105,11 @@ header("content-type:text/html; charset=UTF-8");
 		</div>
 		<div id="top_nav">
 			<div id="tn_quick">
-				<a href="/course/"><div class="tn_pagelink"
-						id="course" title="课程设置"></div></a> <a href="/public/"><div
-						class="tn_pagelink" id="public" title="公益讲堂"></div></a> <a
-					href="/team/"><div class="tn_pagelink" id="team"
-						title="授课团队"></div></a> <a href="/join/"><div
+				<a href="<?php echo $wwwRoot?>/public/"><div
+						class="tn_pagelink" id="public" title="公益讲堂"></div></a> 
+				<a href="<?php echo $wwwRoot?>/team/"><div class="tn_pagelink" id="team"
+						title="授课团队"></div></a> 
+				<a href="<?php echo $wwwRoot?>/join/"><div
 						class="tn_pagelink" id="join" title="加入我们"></div></a>
 			</div>
 		</div>

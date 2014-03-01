@@ -54,7 +54,7 @@ function initCSS() {
 function highlight_sidebar_title(obj) {
 	$(".main_content").find(".sidebar-title").removeClass("select_txt");
 	$(".main_content").find("li").removeClass("select_bg");
-	$(this).addClass("select_txt");
+	$(obj).addClass("select_txt");
 }
 
 function highlight_sidebar(obj) {

@@ -1,32 +1,33 @@
 <?php
 header("content-type:text/html; charset=UTF-8");
+$wwwRoot = "..";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>授课团队</title>
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-<link rel="stylesheet" type="text/css" href="/css/contents.css">
-<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/js/team.js"></script>
-<script type="text/javascript" src="/js/top_nav.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/css/main.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/css/contents.css">
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/team.js"></script>
+<script type="text/javascript" src="<?php echo $wwwRoot?>/js/top_nav.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header_wrapper">
 			<div class="header_content">
 				<div id="nav_menu" class="header_l_nav">
-					<a class="text" href="/"><div id="logo" class="header_l_nav">
-							<img src="/img/logo.png">
+					<a class="text" href="<?php echo $wwwRoot?>/"><div id="logo" class="header_l_nav">
+							<img src="<?php echo $wwwRoot?>/img/friendship_black.png">
 							<div class="title">C.C.W.I.</div>
 						</div></a>
 					<ul class="menu_content">
-						<li><a class="text" href="/">首页</a></li>
-						<!-- <li><a class="text" href="/course/">课程设置</a></li> -->
-						<li><a class="text" href="/public/">分享活动</a></li>
-						<li><a class="text hltxt" href="/team/">奉献爱心</a></li>
-						<li><a class="text" href="/join/">加入我们</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/">首页</a></li>
+						<!-- <li><a class="text" href="<?php echo $wwwRoot?>/course/">课程设置</a></li> -->
+						<li><a class="text" href="<?php echo $wwwRoot?>/public/">分享活动</a></li>
+						<li><a class="text hltxt" href="<?php echo $wwwRoot?>/team/">奉献爱心</a></li>
+						<li><a class="text" href="<?php echo $wwwRoot?>/join/">加入我们</a></li>
 					</ul>
 				</div>
 			</div>
@@ -72,11 +73,10 @@ header("content-type:text/html; charset=UTF-8");
 		</div>
 		<div id="top_nav">
 			<div id="tn_quick">
-				<a href="/course/"><div class="tn_pagelink"
-						id="course" title="课程设置"></div></a> <a href="/public/"><div
+				<a href="<?php echo $wwwRoot?>/public/"><div
 						class="tn_pagelink" id="public" title="公益讲堂"></div></a> <a
-					href="/team/"><div class="tn_pagelink" id="team"
-						title="授课团队"></div></a> <a href="/join/"><div
+					href="<?php echo $wwwRoot?>/team/"><div class="tn_pagelink" id="team"
+						title="授课团队"></div></a> <a href="<?php echo $wwwRoot?>/join/"><div
 						class="tn_pagelink" id="join" title="加入我们"></div></a>
 			</div>
 		</div>
