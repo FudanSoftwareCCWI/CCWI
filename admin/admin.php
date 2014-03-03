@@ -115,3 +115,7 @@
 		</div>
 		<div class="footer" id="icp">
 			<span>©2014 Software Engineering</span>
+		</div>
+	</div>
+</body>
+</html>
