@@ -2,17 +2,16 @@
 	header("content-type:text/html; charset=UTF-8");
 	session_start();
 	session_destroy();
-	$wwwRoot = "..";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="<?php echo $wwwRoot?>/css/login.css" rel="stylesheet" type="text/css" />
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
 <script charset="utf-8" language="javascript" type="text/javascript"
-	src="<?php echo $wwwRoot?>/js/jquery-1.10.2.min.js" defer="defer"></script>
+	src="../js/jquery-1.10.2.min.js" defer="defer"></script>
 <script charset="utf-8" language="javascript" type="text/javascript"
-	src="<?php echo $wwwRoot?>/js/login.js" defer="defer"></script>
+	src="../js/login.js" defer="defer"></script>
 <title>登陆系统</title>
 
 </head>
@@ -39,7 +38,8 @@
 	</div>
 	<!--版权声明-->
 	<div class="footer" id="icp">
-		<span>©2014 Software Engineering</span>
+		<span> © 2013
+			SidneyFan, all rights reserved </span>
 	</div>
 </body>
 </html>
