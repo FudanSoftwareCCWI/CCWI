@@ -52,6 +52,8 @@ $wwwRoot = "..";
 						<div class='item_content showpart' id='content-1-0'>
 							<h3>公益团队</h3>
 							<p>
+							C.C.W.I.全称为China Clean Water Initiative, 是参照美国C.W.I.(Clean Water Initiative)发起的公益性活动, 我们致⼒于解决中国国内偏远⼭山区的饮⽤用干净⽔水问题！ <br />
+							<br />
 							如果你想要加入我们的团队，帮助我们<br />
 							和我们一起策划活动、前往西部<br />
 							请加入我们！<br />
