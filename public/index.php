@@ -3,13 +3,13 @@ header("content-type:text/html; charset=UTF-8");
 //$BASELINK = "/Library/WebServer/Documents";
 $wwwRoot = "..";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>分享活动</title>
 <link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/css/main.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/css/contents.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $wwwRoot?>/src/ckeditor/skins/moono/editor.css?t=E1PE">
 <script type="text/javascript" src="<?php echo $wwwRoot?>/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="<?php echo $wwwRoot?>/js/public.js"></script>
 <script type="text/javascript" src="<?php echo $wwwRoot?>/js/top_nav.js"></script>
@@ -36,9 +36,8 @@ $wwwRoot = "..";
 		<div class="main_wrapper">
 			<div class="main_content text">
 				<?php
-					$xmlfile = $wwwRoot.'/classinfo/activity.xml';
-					$activities = simplexml_load_file($xmlfile);
-					//echo "activity".$activities->getName();
+					$dir = $wwwRoot.'/upload/public/';
+					$activities = opendir($dir);
 				?>
 				<div class="block">
 					<div class="item">
@@ -47,14 +46,14 @@ $wwwRoot = "..";
 								<div class="sidebar-title nrbg">活动列表</div>
 								<ul class="sidebar-content">
 								<?php
-									$activity = $activities->children();
-									for($i = 0;$i < count($activity);$i++){
-										$act = $activity[$i]->children();
-										$act = $act[0];
-										$act = $act->children();
-										$act = $act[1];
-										printf("<li class='default-li' id='1-%d'>%s</li>",$i+1,$act);
+									$i=0;
+									while (($file = readdir($activities)) !== false) { 
+										if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
+											printf("<li class='default-li' id='1-%d'>%s</li>",$i+1,pathinfo($file, PATHINFO_FILENAME));
+											$i++;
+										}
 									}
+									closedir($activities); 
 								?>
 								</ul>
 							</div>
@@ -62,29 +61,28 @@ $wwwRoot = "..";
 					</div>
 					<div class="item-col2">
 						<?php
-						$activity = $activities->children();
-						for($i = 0;$i < count($activity);$i++){
-							$act = $activity[$i];
-							$act_p = $act->children();
-							printf("<div class='item_content showpart activity' id='content-1-".($i + 1)."'>");
-							printf("<div class='content-row'>");
-							printf("<h3>活动简介</h3>");
-							for($j=0; $j < count($act_p);$j++){
-								$p = $act_p[$j];
-								$p_children = $p->children();
-								printf("<div class='activity_line'>");
-								foreach($p->children() as $line){
-									if($line->getName()=="renren"){
-										printf("<p>%s：<a href='http://www.renren.com/250130313' target='_blank'>@人人主页</a></p>",$line);
-									}else
-									printf("<%s>%s</%s>",$line->getName(),$line,$line->getName());
-								}
-								printf("</div>");
-							}
-							printf("<a class='text' href='/apply.php?type=public-1-%d'><div class='enrollin hlbg'>报&nbsp;名</div></a>",($i + 1));
-							printf("</div></div>");
+						$activities = opendir($dir);
+						$i=0;
+						while (($file = readdir($activities)) !== false) { 
+							if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
+						?>
+								<div class='item_content showpart' id='content-1-<?php echo $i+1 ?>'>
+										<h3>活动简介</h3>
+										<p>名称:<?php echo substr(pathinfo($file, PATHINFO_FILENAME),12)?></p>
+										<p>时间:<?php echo substr($file,0,10)?></p>
+										<iframe src="<?php echo($dir.$file); ?>" frameborder="0" id="frame_con"class="cke_wysiwyg_frame cke_reset" style="width:100%;height:500px;" scrolling=no>
+										</iframe>
+										<script type="text/javascript">
+										$("#frame_con").load(function(){
+    										var thisheight = $(this).contents().find("body").height()+30;
+    										$(this).height(thisheight < 500 ? 500 : thisheight);
+										});</script>
+								</div>
+						<?php
+							$i++;
+							}	
 						}
-					?>
+						?>
 					</div>
 				</div>
 			</div>
