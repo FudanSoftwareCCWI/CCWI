@@ -11,6 +11,10 @@ body {
 	min-width: 850px;
 }
 
+iframe{
+	background-color: rgb(247, 247, 247);
+}
+
 .title {
 	font-family: 'futura-pt-1', 'futura-pt-2', 'Helvetica Neue', Helvetica,
 		Arial, sans-serif;

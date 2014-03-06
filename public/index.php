@@ -2,6 +2,9 @@
 header("content-type:text/html; charset=UTF-8");
 //$BASELINK = "/Library/WebServer/Documents";
 $wwwRoot = "..";
+$dir = $wwwRoot.'/upload/public/';
+require_once("../app/controllers/Pub.php");
+require_once("../app/models/PubModel.php");
 ?>
 <html>
 <head>
@@ -35,10 +38,6 @@ $wwwRoot = "..";
 		</div>
 		<div class="main_wrapper">
 			<div class="main_content text">
-				<?php
-					$dir = $wwwRoot.'/upload/public/';
-					$activities = opendir($dir);
-				?>
 				<div class="block">
 					<div class="item">
 						<div class="item_content" id="side_left">
@@ -46,14 +45,7 @@ $wwwRoot = "..";
 								<div class="sidebar-title nrbg">活动列表</div>
 								<ul class="sidebar-content">
 								<?php
-									$i=0;
-									while (($file = readdir($activities)) !== false) { 
-										if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
-											printf("<li class='default-li' id='1-%d'>%s</li>",$i+1,pathinfo($file, PATHINFO_FILENAME));
-											$i++;
-										}
-									}
-									closedir($activities); 
+									Pub::pub_sidebar($dir);
 								?>
 								</ul>
 							</div>
@@ -61,27 +53,7 @@ $wwwRoot = "..";
 					</div>
 					<div class="item-col2">
 						<?php
-						$activities = opendir($dir);
-						$i=0;
-						while (($file = readdir($activities)) !== false) { 
-							if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
-						?>
-								<div class='item_content showpart' id='content-1-<?php echo $i+1 ?>'>
-										<h3>活动简介</h3>
-										<p>名称:<?php echo substr(pathinfo($file, PATHINFO_FILENAME),12)?></p>
-										<p>时间:<?php echo substr($file,0,10)?></p>
-										<iframe src="<?php echo($dir.$file); ?>" frameborder="0" id="frame_con"class="cke_wysiwyg_frame cke_reset" style="width:100%;height:500px;" scrolling=no>
-										</iframe>
-										<script type="text/javascript">
-										$("#frame_con").load(function(){
-    										var thisheight = $(this).contents().find("body").height()+30;
-    										$(this).height(thisheight < 500 ? 500 : thisheight);
-										});</script>
-								</div>
-						<?php
-							$i++;
-							}	
-						}
+						Pub::pub_content($dir);
 						?>
 					</div>
 				</div>
