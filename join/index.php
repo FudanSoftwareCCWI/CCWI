@@ -60,7 +60,7 @@ $wwwRoot = "..";
 							</p>
 							
 							<span class="x-large">报名方式：直接将简历发送至ccwi_2014@163.com 或者</span>
-							<a href="<?php echo $wwwRoot?>/enroll.php?type=team"  class="hltxt x-large">在线报名</a>
+							<a href="<?php echo $wwwRoot?>/user/enroll.php?type=team"  class="hltxt x-large">在线报名</a>
 						</div>
 						<div class='item_content showpart' id='content-2-0'>
 							<h3>公益活动组织</h3>
@@ -74,7 +74,7 @@ $wwwRoot = "..";
 							</p>
 							<h4>为了能让爱心传递下去，请联系我们！</h4>
 							<span class="x-large">报名方式：联系我们的负责主管18812345678 或者</span>
-							<a href="<?php echo $wwwRoot?>/enroll.php?type=orgnization"  class="hltxt x-large">在线报名</a>
+							<a href="<?php echo $wwwRoot?>/user/enroll.php?type=orgnization"  class="hltxt x-large">在线报名</a>
 						</div>
 						<div class='item_content showpart' id='content-3-0'>
 							<h3>联系我们</h3>

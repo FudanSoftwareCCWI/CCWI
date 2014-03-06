@@ -61,9 +61,9 @@
 						<div class="item_content showpart" id="content-1-0">
 							<div class="content-row">
 								<h3>报名情况</h3>
-								<p><a href="/download_file.php?file=join">下载【加入我们】报名情况</a></p>
+								<p><a href="../user/download_file.php?file=join">下载【加入我们】报名情况</a></p>
 								<h3>捐款情况</h3>
-								<p><a href="/download_file.php?file=apply">下载【奉献爱心】捐款情况</a></p>
+								<p><a href="../user/download_file.php?file=apply">下载【奉献爱心】捐款情况</a></p>
 							</div>
 						</div>
 						<div class="item_content showpart" id="content-2-0">
