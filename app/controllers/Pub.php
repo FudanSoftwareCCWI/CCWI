@@ -1,12 +1,23 @@
 <?php
-class Pub{
-	
+class Pub{	
 	public static function pub_sidebar($path){
 		$activities = opendir($path);
 		$i=0;
 		while (($file = readdir($activities)) !== false) { 
 			if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
 				printf(PubModel::make_li($i+1,pathinfo($file, PATHINFO_FILENAME)));
+				$i++;
+			}
+		}
+		closedir($activities); 
+	}
+	
+	public static function pub_sidebar_delete($path){
+		$activities = opendir($path);
+		$i=0;
+		while (($file = readdir($activities)) !== false) { 
+			if(pathinfo($file, PATHINFO_EXTENSION)=='html'){
+				printf(PubModel::make_li_delete($i+1,pathinfo($file, PATHINFO_FILENAME)));
 				$i++;
 			}
 		}
@@ -23,7 +34,5 @@ class Pub{
 			}
 		}
 		closedir($activities); 
-	}
-	
-		
+	}	
 }
