@@ -6,7 +6,7 @@ class PubModel{
 	}
 	
 	public static function make_li_delete($index,$name){
-		return sprintf("<li class='default-li' id='1-%d'>%s</li><div>删除</div>",$index,$name);
+		return sprintf("<li class='default-li' id='1-%d'>%s</li><div><input class='delete' type='button' value='删除'/></div>",$index,$name);
 	}
 	
 	public static function make_content($index,$name,$time,$iframe){

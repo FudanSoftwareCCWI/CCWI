@@ -9,6 +9,10 @@
 		session_start();
 		$_SESSION["views"]= $name;
 	}
+	$wwwRoot = "..";
+	$dir = $wwwRoot.'/upload/public/';
+	require_once("../app/controllers/Pub.php");
+	require_once("../app/models/PubModel.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -54,6 +58,9 @@
 							</div>
 							<div class="sidebar-row1">
 								<div class="sidebar-title nrbg" id="2-0">发布活动</div>
+							</div>
+							<div class="sidebar-row1">
+								<div class="sidebar-title nrbg" id="3-0">删除活动</div>
 							</div>
 						</div>
 					</div>
@@ -103,6 +110,11 @@
 									<div class="line"><input type="submit" value="提交" id="panel_enroll"></div>
 								</form>
 							</div>
+						</div>
+						<div class="item_content showpart" id="content-3-0">
+							<?php
+								Pub::pub_sidebar_delete($dir);
+							?>
 						</div>
 					</div>
 				</div>

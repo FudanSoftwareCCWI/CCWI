@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	initCSS();
 	initCourse();
+	initButton();
 });
 
 
@@ -52,6 +53,20 @@ function initCSS() {
 	$(".sidebar-content > li").click(function() {
 		highlight_sidebar(this);
 	});
+}
+
+function initButton() {
+	$(".delete").click(function(){
+		$title=$(this).parent().prev().text();
+    	$.post("/user/delete_public.php",
+    		{
+      			title:$title,
+    		},
+    		function(data,status){
+      			alert("删除活动:" + $title + "\n状态：" + data);
+    	});
+    	$(this).parent().parent().empty();
+  });
 }
 
 function highlight_sidebar_title(obj) {

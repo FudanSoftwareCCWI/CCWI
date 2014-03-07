@@ -34,6 +34,5 @@ class Pub{
 			}
 		}
 		closedir($activities); 
-	}
-
+	}	
 }
