@@ -75,7 +75,7 @@
 						</div>
 						<div class="item_content showpart" id="content-2-0">
 							<div class="content-row">
-								<form action="/upload_public.php" method="post">
+								<form action="<?php echo $wwwRoot?>/user/upload_public.php" method="post">
 									<h3>活动详情</h3>
 									<div class="line must"><span>活动标题*</span><input type="text" name="title"><span class="error hltxt"></span></div>
 									<div class="line must"><span>举办日期*</span><input type="text" name="time" id="datepicker" placeholder="YYYY-MM-DD"><span class="error hltxt"></span></div>
