@@ -57,16 +57,20 @@ function initCSS() {
 
 function initButton() {
 	$(".delete").click(function(){
-		$title=$(this).parent().prev().text();
-    	$.post("/user/delete_public.php",
-    		{
-      			title:$title,
-    		},
-    		function(data,status){
-      			alert("删除活动:" + $title + "\n状态：" + data);
-    	});
-    	$(this).parent().parent().empty();
-  });
+		var r=confirm("确认删除？");
+  		if (r==true){
+			$title=$(this).parent().prev().text();
+    		$.post("/user/delete_public.php",
+    			{
+      				title:$title,
+    			},
+    			function(data,status){
+      				alert("删除活动:" + $title + "\n状态：" + data);
+    		});
+    		$(this).parent().prev().remove();
+    		$(this).parent().remove();
+    	}
+  	});
 }
 
 function highlight_sidebar_title(obj) {

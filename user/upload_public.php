@@ -21,5 +21,6 @@
 	<h1><?php echo $title?></h1>
 	<h6><?php echo $time?></h6>
 	<?php echo $content?>
+	<a href='../admin/admin.php'>返回</a>
 </body>
 </html>
